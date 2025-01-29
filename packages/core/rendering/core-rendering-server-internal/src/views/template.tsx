@@ -93,7 +93,7 @@ export const Template: FunctionComponent<Props> = ({
               })}
             >
               {i18n.translate('core.ui.welcomeMessage', {
-                defaultMessage: 'Loading Elastic',
+                defaultMessage: 'Loading 4C',
               })}
             </div>
             <div className="kbnProgress" />

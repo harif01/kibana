@@ -29,7 +29,7 @@ describe('NoDataPage', () => {
         />
       </NoDataPageProvider>
     );
-    expect(component.find('h1').html()).toContain('Welcome to Elastic Analytics!');
+    expect(component.find('h1').html()).toContain('Welcome to 4C Analytics!');
     expect(component.find(NoDataCard).length).toBe(1);
   });
 });

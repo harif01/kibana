@@ -94,7 +94,7 @@ const flavors: {
       defaultMessage: 'Observability',
     }),
     pageTitle: i18n.translate('sharedUXPackages.noDataConfig.observabilityPageTitle', {
-      defaultMessage: 'Welcome to Elastic Observability!',
+      defaultMessage: 'Welcome to 4C Observability!',
     }),
     pageDescription: i18n.translate('sharedUXPackages.noDataConfig.observabilityPageDescription', {
       defaultMessage:

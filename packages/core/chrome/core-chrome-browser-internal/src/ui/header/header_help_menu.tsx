@@ -155,6 +155,8 @@ export class HeaderHelpMenu extends Component<Props, State> {
       </EuiHeaderSectionItemButton>
     );
 
+    return null;
+
     return (
       <EuiPopover
         anchorPosition="downRight"

@@ -16,8 +16,8 @@ export const NEW_LIVE_QUERY = 'app/osquery/live_queries/new';
 export const OSQUERY_INTEGRATION_PAGE = '/app/fleet/integrations/osquery_manager/add-integration';
 export const navigateTo = (page: string, opts?: Partial<Cypress.VisitOptions>) => {
   cy.visit(page, opts);
-  cy.contains('Loading Elastic').should('exist');
-  cy.contains('Loading Elastic').should('not.exist');
+  cy.contains('Loading 4C').should('exist');
+  cy.contains('Loading 4C').should('not.exist');
 
   // There's a security warning toast that seemingly makes ui elements in the bottom right unavailable, so we close it
   closeToastIfVisible();

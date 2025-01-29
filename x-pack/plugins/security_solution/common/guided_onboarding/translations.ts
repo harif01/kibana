@@ -12,7 +12,7 @@ export const TITLE = i18n.translate('xpack.securitySolution.guideConfig.title', 
 });
 
 export const DESCRIPTION = i18n.translate('xpack.securitySolution.guideConfig.description', {
-  defaultMessage: `Welcome to Elastic Security for SIEM. In this guide, you'll learn how to analyze log and event data, set up threat detection, and respond to threats.`,
+  defaultMessage: `Welcome to 4C Security for SIEM. In this guide, you'll learn how to analyze log and event data, set up threat detection, and respond to threats.`,
 });
 
 export const DOCS = i18n.translate('xpack.securitySolution.guideConfig.documentationLink', {

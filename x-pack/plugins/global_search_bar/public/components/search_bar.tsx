@@ -353,6 +353,7 @@ export const SearchBar: FC<SearchBarProps> = (opts) => {
     }
   };
 
+  return null;
   return (
     <EuiSelectableTemplateSitewide
       isLoading={isLoading}

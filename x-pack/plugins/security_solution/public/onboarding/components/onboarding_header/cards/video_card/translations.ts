@@ -31,7 +31,7 @@ export const ONBOARDING_HEADER_VIDEO_LINK_TITLE = i18n.translate(
 export const ONBOARDING_HEADER_VIDEO_MODAL_TITLE = i18n.translate(
   'xpack.securitySolution.onboarding.header.card.videoModal.title',
   {
-    defaultMessage: 'Welcome to Elastic Security!',
+    defaultMessage: 'Welcome to 4C Security!',
   }
 );
 

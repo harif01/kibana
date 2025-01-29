@@ -16,7 +16,7 @@ export const GET_STARTED_PAGE_TITLE = (userName: string) =>
 export const GET_STARTED_DATA_INGESTION_HUB_SUBTITLE = i18n.translate(
   'xpack.securitySolution.onboarding.subTitle',
   {
-    defaultMessage: `Welcome to Elastic Security`,
+    defaultMessage: `Welcome to 4C Security`,
   }
 );
 

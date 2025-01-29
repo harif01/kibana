@@ -53,6 +53,7 @@ export const NewsfeedNavButton = ({ newsfeedApi, hasCustomBranding$, isServerles
     setFlyoutVisible(!flyoutVisible);
   }, [newsfeedApi, newsFetchResult, flyoutVisible]);
 
+  return null;
   return (
     <NewsfeedContext.Provider value={{ setFlyoutVisible, newsFetchResult }}>
       <>

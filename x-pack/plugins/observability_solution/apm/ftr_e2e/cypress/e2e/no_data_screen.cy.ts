@@ -24,12 +24,12 @@ describe('No data screen', () => {
 
     it('shows no data screen instead of service inventory', () => {
       cy.visitKibana('/app/apm/');
-      cy.contains('Welcome to Elastic Observability!');
+      cy.contains('Welcome to 4C Observability!');
     });
 
     it('shows settings page', () => {
       cy.visitKibana('/app/apm/settings');
-      cy.contains('Welcome to Elastic Observability!').should('not.exist');
+      cy.contains('Welcome to 4C Observability!').should('not.exist');
       cy.get('h1').contains('Settings');
     });
 
