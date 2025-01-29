@@ -166,7 +166,7 @@ export class LoginPage extends Component<Props, State> {
               <h1>
                 <FormattedMessage
                   id="xpack.security.loginPage.welcomeTitle"
-                  defaultMessage="Welcome to Elastic"
+                  defaultMessage="Welcome to Qavi's World"
                 />
               </h1>
             </EuiTitle>
