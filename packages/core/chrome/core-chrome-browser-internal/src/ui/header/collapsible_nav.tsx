@@ -287,11 +287,14 @@ export function CollapsibleNav({
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
           const overviewLink = overviewLinks.find((link) => link.category === category);
-
+          let removeCategories: any = ['Attack discovery', 'Findings'];
+          let subCategories = allCategorizedLinks[categoryName].filter(item =>
+            !removeCategories.some((removeCategory: string) => removeCategory === item.title)
+          );
           return (
             <EuiCollapsibleNavGroup
               key={category.id}
-              iconType={category.euiIconType}
+              // iconType={category.euiIconType}
               iconSize="m"
               buttonElement={overviewLink ? 'div' : 'button'}
               buttonClassName="kbnCollapsibleNav__solutionGroupButton"
@@ -321,7 +324,7 @@ export function CollapsibleNav({
                   defaultMessage: 'Primary navigation links, {category}',
                   values: { category: category.label },
                 })}
-                listItems={allCategorizedLinks[categoryName].map((link) => readyForEUI(link))}
+                listItems={subCategories.map((link) => readyForEUI(link))}
                 maxWidth="none"
                 color="subdued"
                 gutterSize="none"

@@ -14,7 +14,7 @@
  */
 
 import React from 'react';
-import { EuiTitle, EuiSpacer, EuiFlexGroup, EuiFlexItem, EuiIcon, EuiPortal } from '@elastic/eui';
+import { EuiTitle, EuiSpacer, EuiFlexGroup, EuiFlexItem, EuiIcon, EuiPortal, EuiImage } from '@elastic/eui';
 import { METRIC_TYPE } from '@kbn/analytics';
 import { FormattedMessage } from '@kbn/i18n-react';
 import { getServices } from '../kibana_services';
@@ -72,8 +72,10 @@ export class Welcome extends React.Component<Props> {
           <header className="homWelcome__header">
             <div className="homWelcome__content eui-textCenter">
               <EuiSpacer size="xl" />
-              <span className="homWelcome__logo">
-                <EuiIcon type="logoElastic" size="xxl" />
+              <span className="homWelcome__logo" style={{padding: 0}}>
+                {/* <EuiIcon type="logoElastic" size="xxl" />
+                 */}
+                 <EuiImage src={require('../../../../../../src/core/public/images/4c-icon-lg.svg')} size={60} alt="logo" style={{padding: 0}} />
               </span>
               <EuiTitle size="l" className="homWelcome__title">
                 <h1>

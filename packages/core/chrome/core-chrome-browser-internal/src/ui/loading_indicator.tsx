@@ -80,13 +80,22 @@ export class LoadingIndicator extends React.Component<LoadingIndicatorProps, { v
         })}
       />
     ) : (
-      <EuiIcon
-        type={'logoElastic'}
-        size="l"
+      // <EuiIcon
+      //   type={'logoElastic'}
+      //   size="l"
+      //   data-test-subj={testSubj}
+      //   className="chrHeaderLogo__cluster"
+      //   aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.logoAriaLabel', {
+      //     defaultMessage: 'Elastic Logo',
+      //   })}
+      // />
+      <EuiImage
+        src={require('../../../../../../src/core/public/images/sudarshan-icon.png')}
         data-test-subj={testSubj}
-        className="chrHeaderLogo__cluster"
-        aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.logoAriaLabel', {
-          defaultMessage: 'Elastic Logo',
+        size={24}
+        alt="logo"
+        aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.customLogoAriaLabel', {
+          defaultMessage: 'User logo',
         })}
       />
     );

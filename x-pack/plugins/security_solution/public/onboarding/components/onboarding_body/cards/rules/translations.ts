@@ -39,6 +39,6 @@ export const RULES_CARD_CALLOUT_INTEGRATIONS_BUTTON = i18n.translate(
 export const RULES_CARD_ADD_RULES_BUTTON = i18n.translate(
   'xpack.securitySolution.onboarding.rulesCard.addRulesButton',
   {
-    defaultMessage: 'Add Elastic rules',
+    defaultMessage: 'Add rules',
   }
 );

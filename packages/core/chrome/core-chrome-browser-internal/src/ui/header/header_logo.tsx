@@ -18,6 +18,7 @@ import type { HttpStart } from '@kbn/core-http-browser';
 import type { ChromeNavLink } from '@kbn/core-chrome-browser';
 import { ElasticMark } from './elastic_mark';
 import { LoadingIndicator } from '../loading_indicator';
+import { EuiImage } from '@elastic/eui';
 
 function findClosestAnchor(element: HTMLElement): HTMLAnchorElement | void {
   let current = element;
@@ -106,7 +107,16 @@ export function HeaderLogo({ href, navigateToApp, loadingCount$, ...observables 
           alt="custom mark"
         />
       ) : (
-        <ElasticMark className="chrHeaderLogo__mark" aria-hidden={true} />
+        // <ElasticMark className="chrHeaderLogo__mark" aria-hidden={true} />
+        <EuiImage
+          src={require('../../../../../../../src/core/public/images/4c-logo-white.svg')}
+          width={64}
+          height={36}
+          alt="logo"
+          aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.customLogoAriaLabel', {
+            defaultMessage: 'User logo',
+          })}
+        />
       )}
     </a>
   );

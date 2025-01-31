@@ -538,14 +538,14 @@ export class EnterpriseSearchPlugin implements Plugin {
     }
 
     if (plugins.home) {
-      plugins.home.featureCatalogue.registerSolution({
-        description: ENTERPRISE_SEARCH_OVERVIEW_PLUGIN.DESCRIPTION,
-        icon: 'logoEnterpriseSearch',
-        id: ENTERPRISE_SEARCH_OVERVIEW_PLUGIN.ID,
-        order: 100,
-        path: ENTERPRISE_SEARCH_OVERVIEW_PLUGIN.URL,
-        title: SEARCH_PRODUCT_NAME,
-      });
+      // plugins.home.featureCatalogue.registerSolution({
+      //   description: ENTERPRISE_SEARCH_OVERVIEW_PLUGIN.DESCRIPTION,
+      //   icon: 'logoEnterpriseSearch',
+      //   id: ENTERPRISE_SEARCH_OVERVIEW_PLUGIN.ID,
+      //   order: 100,
+      //   path: ENTERPRISE_SEARCH_OVERVIEW_PLUGIN.URL,
+      //   title: SEARCH_PRODUCT_NAME,
+      // });
 
       plugins.home.featureCatalogue.register({
         category: 'data',

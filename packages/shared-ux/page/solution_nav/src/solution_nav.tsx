@@ -134,13 +134,13 @@ export const SolutionNav: FC<SolutionNavProps> = ({
       className="kbnSolutionNav__title"
     >
       <HeadingElement>
-        {icon && (
+        {/* {icon && (
           <KibanaSolutionAvatar
             className="kbnSolutionNav__titleAvatar"
             iconType={icon}
             name={name}
           />
-        )}
+        )} */}
         <strong>
           <FormattedMessage
             id="sharedUXPackages.solutionNav.mobileTitleText"

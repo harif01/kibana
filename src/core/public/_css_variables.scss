@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
   // height of the header banner
   --kbnHeaderBannerHeight: #{$euiSizeXL};
@@ -7,7 +10,80 @@
   --kbnHeaderOffsetWithBanner: calc(var(--kbnHeaderBannerHeight) + var(--kbnHeaderOffset));
   // height of the action menu in the header in serverless projects
   --kbnProjectHeaderAppActionMenuHeight: #{$euiSize * 3};
+
+  // 4c custom colors 
+--euiColorPrimary:#14133a;
+// primary 
+--color-4c-primary:#14133a;
+$euiColorPrimary:#14133a;
+--color-4c-primary-light:#dad9ff;
+--color-cz-pimary-md:#020061;
+
+// secondary 
+--color-4c-secondary:#ff9933;
+--color-4c-secondary-light:#fde2c6;
 }
 
-// Quick note: This shouldn't be mixed with Sass variable declarations,
-// as each import will cause :root to be re-declared unnecessarily
+*{
+  font-family: "Montserrat", serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body{
+  font-size:16px ;
+}
+// .euiButton {
+//   background-color: var(--euiColorPrimary) !important;
+// }
+.euiButton--primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+// .euiButton{
+//   &.color-primary{
+//     color: var(--color-4c-secondary) !important;
+//     &.fill{
+//       background-color: var(--color-4c-secondary) !important;
+//       color: #fff !important;
+//     }
+//   }
+
+// }
+.css-13fcias-euiSideNavItemButton-selected-trunk{
+  color: var(--color-cz-pimary-md);
+}
+.css-yhttm1-euiButtonDisplay-euiButtonEmpty-xs-empty-primary-flush-left ,
+.css-38cohn-euiButtonDisplay-euiButtonEmpty-s-empty-primary,
+.css-4ljoze-euiLink-primary
+{
+  color: var(--color-4c-secondary) !important; 
+}
+.css-tr2sqy-euiTitle-xxs-euiCallOutHeader-primary , 
+.css-1kdfwkt-euiButtonDisplay-euiButtonEmpty-m-empty-primary-euiHeaderSectionItemButton
+{
+  color: var(--color-4c-primary) !important; 
+}
+.css-nk0pb7-euiPanel-none-s-primary-euiCallOut{
+  background-color: var(--color-4c-primary-light) !important;
+  color: var(--color-4c-primary) !important;
+}
+.css-4wl8yg-euiButtonDisplay-m-defaultMinWidth-fill-primary 
+{
+  background-color: var(--color-4c-primary) !important;
+}
+.css-vocvz-euiButtonDisplay-m-defaultMinWidth-base-primary ,
+.css-13vvn2p-euiLink-subdued-euiBreadcrumb__content-application-firstChild-isTruncated:is(a), 
+.css-13vvn2p-euiLink-subdued-euiBreadcrumb__content-application-firstChild-isTruncated:is(button),
+.css-bhtg5n-euiLink-subdued-euiBreadcrumb__content-application-isTruncated:is(a), .css-bhtg5n-euiLink-subdued-euiBreadcrumb__content-application-isTruncated:is(button){
+  background-color: var(--color-4c-primary-light) !important;
+  color: var(--color-4c-primary) !important;
+}
+.css-1jkowr9-euiTab-selected{
+  box-shadow: var(--color-4c-secondary) 0px -2px 0px inset;
+    color: var(--color-4c-secondary)
+}
+.css-1yi7efa-euiButtonDisplay-s-defaultMinWidth-base-success{
+  color: var(--color-4c-secondary);
+  background-color: var(--color-4c-secondary-light);
+}

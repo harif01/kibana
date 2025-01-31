@@ -38,7 +38,7 @@ export const RULE_UPDATES_LINK = i18n.translate(
 export const ADD_ELASTIC_RULES = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.addElasticRulesButtonTitle',
   {
-    defaultMessage: 'Add Elastic rules',
+    defaultMessage: 'Add rules',
   }
 );
 

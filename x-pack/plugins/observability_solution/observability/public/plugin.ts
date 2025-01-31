@@ -315,27 +315,27 @@ export class Plugin
     );
 
     if (pluginsSetup.home) {
-      pluginsSetup.home.featureCatalogue.registerSolution({
-        id: observabilityFeatureId,
-        title: i18n.translate('xpack.observability.featureCatalogueTitle', {
-          defaultMessage: 'Observability',
-        }),
-        description: i18n.translate('xpack.observability.featureCatalogueDescription', {
-          defaultMessage:
-            'Consolidate your logs, metrics, application traces, and system availability with purpose-built UIs.',
-        }),
-        icon: 'logoObservability',
-        path: `${OBSERVABILITY_BASE_PATH}/`,
-        order: 200,
-        isVisible: (capabilities) => {
-          const obs = capabilities.catalogue[observabilityFeatureId];
-          const uptime = capabilities.catalogue.uptime;
-          const infra = capabilities.catalogue.infra;
-          const apm = capabilities.catalogue.apm;
+      // pluginsSetup.home.featureCatalogue.registerSolution({
+      //   id: observabilityFeatureId,
+      //   title: i18n.translate('xpack.observability.featureCatalogueTitle', {
+      //     defaultMessage: 'Observability',
+      //   }),
+      //   description: i18n.translate('xpack.observability.featureCatalogueDescription', {
+      //     defaultMessage:
+      //       'Consolidate your logs, metrics, application traces, and system availability with purpose-built UIs.',
+      //   }),
+      //   icon: 'logoObservability',
+      //   path: `${OBSERVABILITY_BASE_PATH}/`,
+      //   order: 200,
+      //   isVisible: (capabilities) => {
+      //     const obs = capabilities.catalogue[observabilityFeatureId];
+      //     const uptime = capabilities.catalogue.uptime;
+      //     const infra = capabilities.catalogue.infra;
+      //     const apm = capabilities.catalogue.apm;
 
-          return obs || uptime || infra || apm;
-        },
-      });
+      //     return obs || uptime || infra || apm;
+      //   },
+      // });
     }
 
     pluginsSetup.observabilityShared.navigation.registerSections(

@@ -9,6 +9,11 @@
 }
 
 .loginWelcome__logo {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   margin-bottom: $euiSizeXL;
 
   @include kibanaCircleLogo;

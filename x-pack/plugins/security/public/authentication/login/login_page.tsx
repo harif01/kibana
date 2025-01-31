@@ -150,10 +150,11 @@ export class LoginPage extends Component<Props, State> {
     const logo = customLogo ? (
       <EuiImage src={customLogo} size={40} alt="logo" />
     ) : (
-      <EuiIcon type="logoElastic" size="xxl" />
+      // <EuiIcon type="logoElastic" size="xxl" />
+      <EuiImage src={require('../../../../../../src/core/public/images/4c-icon-lg.svg')} size={60} alt="logo" />
     );
     // custom logo needs to be centered
-    const logoStyle = customLogo ? { padding: 0 } : {};
+    const logoStyle = customLogo ? { padding: 0 } : { padding: 0, display: 'flex'};
     return (
       <div className="loginWelcome login-form">
         <header className="loginWelcome__header">

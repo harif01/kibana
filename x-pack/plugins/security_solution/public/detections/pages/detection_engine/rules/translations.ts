@@ -798,7 +798,7 @@ export const CUSTOM_RULES = i18n.translate(
 export const ELASTIC_RULES = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.allRules.filters.elasticRulesTitle',
   {
-    defaultMessage: 'Elastic rules',
+    defaultMessage: 'Default rules',
   }
 );
 

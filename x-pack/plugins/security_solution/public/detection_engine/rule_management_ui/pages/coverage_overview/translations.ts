@@ -123,7 +123,7 @@ export const CoverageOverviewDisabledRuleActivity = i18n.translate(
 export const CoverageOverviewElasticRuleSource = i18n.translate(
   'xpack.securitySolution.coverageOverviewDashboard.elasticRuleSource',
   {
-    defaultMessage: 'Elastic rules',
+    defaultMessage: 'Default rules',
   }
 );
 

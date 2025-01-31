@@ -36,13 +36,13 @@ export const SolutionPanel: FC<Props> = ({ addBasePath, solution }) => {
         className={`homSolutionPanel homSolutionPanel--${solution.id}`}
         description={solution.description}
         href={addBasePath(solution.path)}
-        icon={
-          <KibanaPageTemplateSolutionNavAvatar
-            name={solution.title}
-            iconType={solution.icon}
-            size="xl"
-          />
-        }
+        // icon={
+        //   <KibanaPageTemplateSolutionNavAvatar
+        //     name={solution.title}
+        //     iconType={solution.icon}
+        //     size="xl"
+        //   />
+        // }
         image={addBasePath(getSolutionGraphicURL(snakeCase(solution.id)))}
         onClick={(event: MouseEvent) => {
           trackUiMetric(METRIC_TYPE.CLICK, `solution_panel_${solution.id}`);
