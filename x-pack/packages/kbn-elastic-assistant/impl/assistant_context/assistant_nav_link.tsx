@@ -75,9 +75,12 @@ export const AssistantNavLink: FC = () => {
   return (
     <InPortal node={portalNode}>
       <EuiToolTip content={TOOLTIP_CONTENT}>
+
+        {/* this is header ai assistant button  */}
         <EuiButtonBasicOrEmpty
           onClick={showOverlay}
           color="primary"
+          className='d-none'
           size="s"
           data-test-subj="assistantNavLink"
         >

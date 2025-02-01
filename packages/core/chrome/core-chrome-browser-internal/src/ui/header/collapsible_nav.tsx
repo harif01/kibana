@@ -287,10 +287,7 @@ export function CollapsibleNav({
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
           const overviewLink = overviewLinks.find((link) => link.category === category);
-          let removeCategories: any = ['Attack discovery', 'Findings'];
-          let subCategories = allCategorizedLinks[categoryName].filter(item =>
-            !removeCategories.some((removeCategory: string) => removeCategory === item.title)
-          );
+
           return (
             <EuiCollapsibleNavGroup
               key={category.id}
@@ -302,13 +299,15 @@ export function CollapsibleNav({
                 overviewLink ? (
                   <a
                     className="eui-textInheritColor kbnCollapsibleNav__solutionGroupLink"
+                    style={{lineHeight:'1' , verticalAlign:'middle'}}
                     {...createOverviewLink({
                       link: overviewLink,
                       navigateToUrl,
                       onClick: closeNav,
+                      
                     })}
                   >
-                    {category.label}
+                   <img width={18} height={16} style={{verticalAlign:'bottom', marginRight: '0.5rem'}} src={require('../../../../../../../src/core/public/images/navbar-4c-logo.svg')} /> {category.label}
                   </a>
                 ) : (
                   category.label
@@ -324,7 +323,7 @@ export function CollapsibleNav({
                   defaultMessage: 'Primary navigation links, {category}',
                   values: { category: category.label },
                 })}
-                listItems={subCategories.map((link) => readyForEUI(link))}
+                listItems={allCategorizedLinks[categoryName].map((link) => readyForEUI(link))}
                 maxWidth="none"
                 color="subdued"
                 gutterSize="none"

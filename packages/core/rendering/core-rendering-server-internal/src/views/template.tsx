@@ -32,7 +32,7 @@ export const Template: FunctionComponent<Props> = ({
     customBranding,
   },
 }) => {
-  const title = customBranding.pageTitle ?? 'Elastic';
+  const title = customBranding.pageTitle ?? '4C';
   const favIcon = customBranding.faviconSVG ?? `${uiPublicUrl}/favicons/favicon.svg`;
   const favIconPng = customBranding.faviconPNG ?? `${uiPublicUrl}/favicons/favicon.png`;
   const logo = customBranding.logo ? (

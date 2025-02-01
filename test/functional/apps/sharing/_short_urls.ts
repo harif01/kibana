@@ -31,7 +31,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
       log.info('Checking page title...');
       await retry.try(async () => {
         const title = await browser.getTitle();
-        expect(title).to.be('Not Found - Elastic');
+        expect(title).to.be('Not Found - 4C');
       });
 
       await retry.try(async () => {
@@ -45,7 +45,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
       // check the page
       await retry.try(async () => {
         const title = await browser.getTitle();
-        expect(title).to.be('Home - Elastic');
+        expect(title).to.be('Home - 4C');
       });
     });
   });

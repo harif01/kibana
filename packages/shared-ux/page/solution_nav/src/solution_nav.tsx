@@ -141,6 +141,9 @@ export const SolutionNav: FC<SolutionNavProps> = ({
             name={name}
           />
         )} */}
+        <img width={18} height={18} 
+        style={{marginRight: '0.5rem'}} 
+        src={require('../../../../../src/core/public/images/navbar-4c-logo.svg')} />
         <strong>
           <FormattedMessage
             id="sharedUXPackages.solutionNav.mobileTitleText"

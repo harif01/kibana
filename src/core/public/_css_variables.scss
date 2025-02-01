@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import '~@elastic/eui/src/themes/amsterdam/_colors_light.scss';
+@import '@elastic/eui/src/themes/amsterdam/colors_dark';
+@import '@elastic/eui/src/themes/amsterdam/globals';
+@import '@elastic/eui/src/themes/amsterdam/globals.scss';
+@import '@elastic/eui/src/themes/amsterdam/global_styling/variables/_index.scss';
 
+// Core
+$euiColorPrimary: #14133a ;
+$euiColorAccent: #ff9933 ;
+
+// Modifier naming and colors.
+$euiButtonTypes: (
+  primary: var(-color-4c-secondary),
+  accent: var(-color-4c-secondary),
+  success: $euiColorSuccess,
+  warning: $euiColorWarning,
+  danger: $euiColorDanger,
+  ghost: $euiColorGhost, // Ghost is special, and does not care about theming.
+  text: $euiColorDarkShade, // Reserved for special use cases
+) ;
+
+$euiFontFamily: "Montserrat", serif ;
 :root {
   // height of the header banner
   --kbnHeaderBannerHeight: #{$euiSizeXL};
@@ -12,70 +33,78 @@
   --kbnProjectHeaderAppActionMenuHeight: #{$euiSize * 3};
 
   // 4c custom colors 
---euiColorPrimary:#14133a;
 // primary 
 --color-4c-primary:#14133a;
-$euiColorPrimary:#14133a;
 --color-4c-primary-light:#dad9ff;
 --color-cz-pimary-md:#020061;
-
 // secondary 
 --color-4c-secondary:#ff9933;
 --color-4c-secondary-light:#fde2c6;
 }
-
+.euiButton--primary {
+  background-color: var(---color-4c-primary);
+  color: var(--color-4c-primary-light);
+}
 *{
-  font-family: "Montserrat", serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
 }
 body{
   font-size:16px ;
 }
-// .euiButton {
-//   background-color: var(--euiColorPrimary) !important;
-// }
-.euiButton--primary {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: white;
+input:focus{
+  background-image: linear-gradient(to top,
+  var(--color-4c-secondary),
+  var(--color-4c-secondary) 2px,
+  transparent 2px,
+  transparent 100%
+);
 }
-// .euiButton{
-//   &.color-primary{
-//     color: var(--color-4c-secondary) !important;
-//     &.fill{
-//       background-color: var(--color-4c-secondary) !important;
-//       color: #fff !important;
-//     }
-//   }
-
-// }
 .css-13fcias-euiSideNavItemButton-selected-trunk{
   color: var(--color-cz-pimary-md);
 }
 .css-yhttm1-euiButtonDisplay-euiButtonEmpty-xs-empty-primary-flush-left ,
 .css-38cohn-euiButtonDisplay-euiButtonEmpty-s-empty-primary,
 .css-4ljoze-euiLink-primary
+
 {
   color: var(--color-4c-secondary) !important; 
 }
 .css-tr2sqy-euiTitle-xxs-euiCallOutHeader-primary , 
-.css-1kdfwkt-euiButtonDisplay-euiButtonEmpty-m-empty-primary-euiHeaderSectionItemButton
+.css-1kdfwkt-euiButtonDisplay-euiButtonEmpty-m-empty-primary-euiHeaderSectionItemButton ,
+.css-18cv3bk-euiButtonIcon-s-empty-primary ,
+.css-7vyy05-euiButtonDisplay-euiButtonEmpty-m-empty-primary ,
+.css-1o3xr6l-euiButtonDisplay-euiButtonEmpty-m-empty-primary-flush-both,
+.css-w92548-euiButtonIcon-xs-empty-primary ,
+.css-zosky5-euiButtonDisplay-euiButtonEmpty-xs-empty-primary-euiQuickSelectPopoverButton,
+.css-1saf061-euiButtonIcon-m-empty-primary,
+.css-9bd0lf-euiButtonIcon-m-empty-primary-query_bar_menu--button,
+.css-zqlnb-euiTitle-xxxs-landing_links_image_card--title,
+.css-ueav80-euiButtonDisplay-s-defaultMinWidth-euiButtonGroupButton-compressed-empty-primary,
+.css-1ax57v2-replacement_card-component--ReplacementCard .euiAccordion__button
 {
   color: var(--color-4c-primary) !important; 
 }
-.css-nk0pb7-euiPanel-none-s-primary-euiCallOut{
+.css-nk0pb7-euiPanel-none-s-primary-euiCallOut ,
+.css-1g59xf1-euiButtonDisplay-m-base-primary,
+.css-o78r8c-euiButtonDisplay-s-base-primary{
   background-color: var(--color-4c-primary-light) !important;
   color: var(--color-4c-primary) !important;
 }
-.css-4wl8yg-euiButtonDisplay-m-defaultMinWidth-fill-primary 
+.css-4wl8yg-euiButtonDisplay-m-defaultMinWidth-fill-primary ,
+.css-1t2aqad-euiButtonDisplay-s-defaultMinWidth-fill-primary ,
+.css-1d7to7j-euiButtonDisplay-m-fullWidth-defaultMinWidth-fill-primary,
+.css-a7ca7z-euiButtonIcon-m-fill-primary,
+.css-8ya1md-euiButtonDisplay-s-defaultMinWidth-euiButtonGroupButton-compressed-fill-primary
 {
   background-color: var(--color-4c-primary) !important;
 }
 .css-vocvz-euiButtonDisplay-m-defaultMinWidth-base-primary ,
 .css-13vvn2p-euiLink-subdued-euiBreadcrumb__content-application-firstChild-isTruncated:is(a), 
 .css-13vvn2p-euiLink-subdued-euiBreadcrumb__content-application-firstChild-isTruncated:is(button),
-.css-bhtg5n-euiLink-subdued-euiBreadcrumb__content-application-isTruncated:is(a), .css-bhtg5n-euiLink-subdued-euiBreadcrumb__content-application-isTruncated:is(button){
+.css-bhtg5n-euiLink-subdued-euiBreadcrumb__content-application-isTruncated:is(a), .css-bhtg5n-euiLink-subdued-euiBreadcrumb__content-application-isTruncated:is(button),
+.css-1tho3ey-euiButtonIcon-m-base-primary{
   background-color: var(--color-4c-primary-light) !important;
   color: var(--color-4c-primary) !important;
 }
@@ -86,4 +115,7 @@ body{
 .css-1yi7efa-euiButtonDisplay-s-defaultMinWidth-base-success{
   color: var(--color-4c-secondary);
   background-color: var(--color-4c-secondary-light);
+}
+.d-none{
+  display: none !important;
 }
