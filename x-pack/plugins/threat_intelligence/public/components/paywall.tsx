@@ -23,7 +23,7 @@ export const Paywall: VFC = () => {
   } = useKibana();
   return (
     <EuiEmptyPrompt
-      icon={<EuiIcon type="logoSecurity" size="xl" />}
+      // icon={<EuiIcon type="logoSecurity" size="xl" />}
       color="subdued"
       data-test-subj="tiPaywall"
       title={

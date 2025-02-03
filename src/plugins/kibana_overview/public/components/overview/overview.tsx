@@ -228,7 +228,7 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
   return (
     <KibanaPageTemplate
       pageHeader={{
-        iconType: 'logoKibana',
+        // iconType: 'logoKibana',
         pageTitle: <FormattedMessage defaultMessage="Analytics" id="kibanaOverview.header.title" />,
         rightSideItems: overviewPageActions({
           addDataHref,
@@ -299,7 +299,7 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
                   <h2 id="kbnOverviewMore__title">
                     <FormattedMessage
                       id="kibanaOverview.more.title"
-                      defaultMessage="Do more with Elastic"
+                      defaultMessage="Do more with 4C"
                     />
                   </h2>
                 </EuiTitle>
@@ -323,7 +323,7 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
                             className={`kbnOverviewSolution ${id}`}
                             description={description ? description : ''}
                             href={addBasePath(path)}
-                            icon={<KibanaSolutionAvatar name={title} iconType={icon} size="xl" />}
+                            // icon={<KibanaSolutionAvatar name={title} iconType={icon} size="xl" />}
                             image={addBasePath(getSolutionGraphicURL(snakeCase(id)))}
                             title={title}
                             titleElement="h3"

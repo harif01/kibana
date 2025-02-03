@@ -90,7 +90,7 @@ export const EmptyPromptComponent = memo(() => {
           <EuiFlexItem>
             <EuiPageHeader
               pageTitle={i18n.SIEM_HEADER}
-              iconType="logoSecurity"
+              // iconType="logoSecurity"
               css={pageHeaderStyles}
             />
             <EuiCard
@@ -106,7 +106,7 @@ export const EmptyPromptComponent = memo(() => {
               css={headerCardStyles}
             />
           </EuiFlexItem>
-          <EuiFlexItem>
+          {/* <EuiFlexItem>
             <iframe
               allowFullScreen
               className="vidyard_iframe"
@@ -119,7 +119,7 @@ export const EmptyPromptComponent = memo(() => {
               title={i18n.SIEM_HEADER}
               width="100%"
             />
-          </EuiFlexItem>
+          </EuiFlexItem> */}
         </EuiFlexGroup>
       </EuiFlexItem>
       <EuiFlexItem css={getFlexItemStyles(euiTheme)}>
