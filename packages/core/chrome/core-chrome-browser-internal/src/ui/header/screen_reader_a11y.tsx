@@ -15,7 +15,7 @@ import { i18n } from '@kbn/i18n';
 import type { InternalApplicationStart } from '@kbn/core-application-browser-internal';
 import type { HeaderProps } from './header';
 
-const DEFAULT_BRAND = 'Elastic'; // This may need to be DRYed out with https://github.com/elastic/kibana/blob/main/packages/core/rendering/core-rendering-server-internal/src/views/template.tsx#L34
+const DEFAULT_BRAND = '4C'; // This may need to be DRYed out with https://github.com/elastic/kibana/blob/main/packages/core/rendering/core-rendering-server-internal/src/views/template.tsx#L34
 const SEPARATOR = ' - ';
 
 export const ScreenReaderRouteAnnouncements: FC<{
