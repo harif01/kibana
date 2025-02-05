@@ -23,7 +23,7 @@ export function Breadcrumbs({ breadcrumbs$ }: Props) {
   let crumbs = breadcrumbs;
 
   if (breadcrumbs.length === 0) {
-    crumbs = [{ text: 'Kibana' }];
+    crumbs = [{ text: '4C' }];
   }
 
   crumbs = crumbs.map((breadcrumb, i) => {

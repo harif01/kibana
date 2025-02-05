@@ -41,6 +41,13 @@ $euiFontFamily: "Montserrat", serif ;
 --color-4c-secondary:#ff9933;
 --color-4c-secondary-light:#fde2c6;
 }
+// remove findings and attack discovery 
+li.euiListGroupItem:has(#solutionSideNavItemLink-cloud_security_posture-findings) ,
+li.euiListGroupItem:has(#solutionSideNavItemLink-attack_discovery), 
+.css-mezjcv-euiFlexGroup-responsive-xs-flexStart-center-row:has(#solutionSideNavItemLink-explore){
+  display: none;
+}
+
 .euiButton--primary {
   background-color: var(---color-4c-primary);
   color: var(--color-4c-primary-light);
@@ -61,9 +68,6 @@ input:focus{
   transparent 100%
 );
 }
-.css-13fcias-euiSideNavItemButton-selected-trunk{
-  color: var(--color-cz-pimary-md);
-}
 .css-yhttm1-euiButtonDisplay-euiButtonEmpty-xs-empty-primary-flush-left ,
 .css-38cohn-euiButtonDisplay-euiButtonEmpty-s-empty-primary,
 .css-4ljoze-euiLink-primary
@@ -82,13 +86,32 @@ input:focus{
 .css-9bd0lf-euiButtonIcon-m-empty-primary-query_bar_menu--button,
 .css-zqlnb-euiTitle-xxxs-landing_links_image_card--title,
 .css-ueav80-euiButtonDisplay-s-defaultMinWidth-euiButtonGroupButton-compressed-empty-primary,
-.css-1ax57v2-replacement_card-component--ReplacementCard .euiAccordion__button
+.css-1ax57v2-replacement_card-component--ReplacementCard .euiAccordion__button,
+.css-13fcias-euiSideNavItemButton-selected-trunk,
+.css-1iyz4q0-euiButtonDisplay-euiButtonEmpty-m-empty-primary-flush-right,
+.css-1pp94kf-euiButtonDisplay-euiButtonEmpty-xs-empty-primary,
+.css-1ysi5ge-euiButtonDisplay-euiButtonEmpty-xs-empty-primary-flush-right,
+.css-jlrz45-euiButtonDisplay-euiButtonEmpty-m-empty-primary-flush-left,
+.css-1pp94kf-euiButtonDisplay-euiButtonEmpty-xs-empty-primary,
+.css-16trkbk-euiTableHeaderCell__button:hover, 
+.css-16trkbk-euiTableHeaderCell__button:focus,
+.css-y0y8lx-euiButtonDisplay-euiButtonEmpty-s-empty-disabled-isDisabled-euiPaginationButton-isActive,
+.css-1ndesvj-euiLink-primary-feedback_component--SubmitFeedbackComponent,
+.gFUeCP .ingest-active-button,
+.css-akxjbi-euiTitle-xs-euiCallOutHeader-primary
 {
   color: var(--color-4c-primary) !important; 
 }
 .css-nk0pb7-euiPanel-none-s-primary-euiCallOut ,
 .css-1g59xf1-euiButtonDisplay-m-base-primary,
-.css-o78r8c-euiButtonDisplay-s-base-primary{
+.css-o78r8c-euiButtonDisplay-s-base-primary,
+.css-2u7fue-euiSelectableListItem-s:hover:not([aria-disabled="true"]), 
+.css-2u7fue-euiSelectableListItem-s.euiSelectableListItem-isFocused:not([aria-disabled="true"]),
+.css-13zid0o-euiButtonDisplay-s-fullWidth-defaultMinWidth-base-primary,
+.css-xrjjnu-euiButtonDisplay-s-defaultMinWidth-base-primary,
+.css-zsrdee-euiButtonDisplay-m-fullWidth-defaultMinWidth-base-primary,
+.css-1r1yx9p-euiPanel-none-m-primary-euiCallOut
+{
   background-color: var(--color-4c-primary-light) !important;
   color: var(--color-4c-primary) !important;
 }
@@ -96,7 +119,15 @@ input:focus{
 .css-1t2aqad-euiButtonDisplay-s-defaultMinWidth-fill-primary ,
 .css-1d7to7j-euiButtonDisplay-m-fullWidth-defaultMinWidth-fill-primary,
 .css-a7ca7z-euiButtonIcon-m-fill-primary,
-.css-8ya1md-euiButtonDisplay-s-defaultMinWidth-euiButtonGroupButton-compressed-fill-primary
+.css-8ya1md-euiButtonDisplay-s-defaultMinWidth-euiButtonGroupButton-compressed-fill-primary,
+.css-6zshw9-euiButtonDisplay-s-defaultMinWidth-fill-primary,
+.css-id4g3i-euiCheckbox__square-selected,
+.css-xsxddu-euiButtonDisplay-m-defaultMinWidth-fill-primary,
+.css-3v99w0-euiButtonDisplay-m-fill-primary,
+.css-1cb13a3-euiBadge-primary,
+.css-1uc02es-euiSwitch__body-on,
+.css-197uut3-euiRadio__circle-selected,
+.css-15xy9es-euiCheckbox__square-selected
 {
   background-color: var(--color-4c-primary) !important;
 }

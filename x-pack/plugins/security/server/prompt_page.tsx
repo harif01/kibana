@@ -83,7 +83,7 @@ export function PromptPage({
   return (
     <html lang={i18n.getLocale()}>
       <head>
-        <title>{customBranding.pageTitle ? customBranding.pageTitle : 'Elastic'}</title>
+        <title>{customBranding.pageTitle ? customBranding.pageTitle : '4C'}</title>
         {/* eslint-disable-next-line react/no-danger */}
         <style dangerouslySetInnerHTML={{ __html: `</style>${emotionStyles}` }} />
         {styleSheetPaths.map((path) => (

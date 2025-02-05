@@ -78,7 +78,7 @@ export const App = ({ http, token }: { http: HttpSetup; token?: string }) => {
         <EuiPageTemplate.Header iconType="logoElastic" pageTitle="Welcome to 4C" />
         <EuiPageTemplate.Section>
           <EuiPanel>
-            <EuiText>Kibana server is not ready yet.</EuiText>
+            <EuiText>4C server is not ready yet.</EuiText>
           </EuiPanel>
         </EuiPageTemplate.Section>
       </EuiPageTemplate>
