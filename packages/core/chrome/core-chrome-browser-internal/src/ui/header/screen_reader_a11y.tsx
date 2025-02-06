@@ -43,13 +43,14 @@ export const ScreenReaderRouteAnnouncements: FC<{
       setRouteTitle('');
     }
   }, [breadcrumbs, branding]);
+  
+  document.title = routeTitle;
 
   // 1. Canvas dynamically updates breadcrumbs *and* page title/history on every name onChange,
   // which leads to focus fighting if this is enabled
   const appId = useObservable(appId$);
   const disableFocusForApps = ['canvas'];
   const focusRegionOnTextChange = !disableFocusForApps.includes(appId || '');
-
   return (
     <EuiScreenReaderLive focusRegionOnTextChange={focusRegionOnTextChange}>
       {routeTitle}
