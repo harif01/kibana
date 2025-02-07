@@ -11,7 +11,7 @@ import sourceManagedTag from './tag_managed.json';
 import sourceSecuritySolutionTag from './tag_security_solution.json';
 
 describe('Assets for rule monitoring', () => {
-  describe('Dashboard: "[Elastic Security] Detection rule monitoring"', () => {
+  describe('Dashboard: "[4C Security] Detection rule monitoring"', () => {
     it('has correct type and id', () => {
       expect(sourceRuleMonitoringDashboard).toEqual(
         expect.objectContaining({
