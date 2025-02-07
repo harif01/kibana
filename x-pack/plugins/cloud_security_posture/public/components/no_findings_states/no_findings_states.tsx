@@ -186,6 +186,8 @@ const EmptySecurityFindingsPrompt = () => {
   const wizAddIntegrationLink = useAdd3PIntegrationRoute('wiz');
   const is3PSupportedPage = location.pathname.includes(findingsNavigation.findings_default.path);
 
+  return null;
+
   return (
     <EuiFlexGroup>
       <EuiFlexItem>

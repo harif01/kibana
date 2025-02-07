@@ -253,6 +253,7 @@ export function CollapsibleNav({
             listItems={recentlyAccessed.map((link) => {
               // TODO #64541
               // Can remove icon from recent links completely
+              link.label = link.label.replace(/elastic/gi, "4C");
               const { iconType, onClick, ...hydratedLink } = createRecentNavLink(
                 link,
                 allowedLinks,
