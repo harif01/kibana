@@ -80,7 +80,6 @@ export const AssistantNavLink: FC = () => {
         <EuiButtonBasicOrEmpty
           onClick={showOverlay}
           color="primary"
-          className='d-none'
           size="s"
           data-test-subj="assistantNavLink"
         >

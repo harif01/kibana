@@ -42,11 +42,11 @@ $euiFontFamily: "Montserrat", serif ;
 --color-4c-secondary-light:#fde2c6;
 }
 // remove findings and attack discovery 
-li.euiListGroupItem:has(#solutionSideNavItemLink-cloud_security_posture-findings) ,
-li.euiListGroupItem:has(#solutionSideNavItemLink-attack_discovery), 
-.css-mezjcv-euiFlexGroup-responsive-xs-flexStart-center-row:has(#solutionSideNavItemLink-explore){
-  display: none;
-}
+// li.euiListGroupItem:has(#solutionSideNavItemLink-cloud_security_posture-findings) ,
+// li.euiListGroupItem:has(#solutionSideNavItemLink-attack_discovery), 
+// .css-mezjcv-euiFlexGroup-responsive-xs-flexStart-center-row:has(#solutionSideNavItemLink-explore){
+//   display: none;
+// }
 
 .euiButton--primary {
   background-color: var(---color-4c-primary);
